@@ -8,4 +8,4 @@ A docker container for running podman.
 
 ## Usage
 
-    docker run okinta/podman podman --storage-driver vfs --cgroup-manager=cgroupfs run docker.io/alpine echo hello
+    docker run --privileged okinta/podman podman --storage-driver vfs --cgroup-manager=cgroupfs run docker.io/alpine echo hello
